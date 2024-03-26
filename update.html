@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Details</title>
+    <style>
+ 
+ body {
+    text-align: center;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+}
+
+form {
+    background-color: aquamarine;
+    display: block;
+    margin: 100px auto; /* Center the form horizontally */
+    width: 200px;
+    padding: 50px; /* Adjust the padding as needed */
+    margin-top: 200px;
+    border-radius: 25px;
+}
+
+#pname,
+#phone,
+#email,
+#password,
+#oldemail,
+#oldpassword {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#pname:hover,
+#phone:hover,
+#email:hover,
+#password:hover,
+#oldemail:hover,
+#oldpassword:hover {
+    background-color: aliceblue;
+    border:none;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius:5px;
+}
+
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border:none;
+}
+
+label {
+    color: black;
+}
+
+        
+    </style>
+</head>
+<body>
+    <form action="update.php" method="post">
+
+        
+        <label for="email">Old Email:</label>
+        <input id = "email" type="email" name="oldemail" required><br>
+
+        <label for="password">Old Password:</label>
+        <input id = "password" type="password" name="oldpassword" required><br>
+
+        <label for="pname">New Name:</label>
+        <input id = "pname" type="text" name="pname" required><br>
+
+        <label for="email">New Email:</label>
+        <input id = "email" type="email" name="email" required><br>
+
+        <label for="password">New Password:</label>
+        <input id = "password" type="password" name="password" required><br>
+
+        <label for="phone">New Phone:</label>
+        <input id = "phone" type="text" name="phone" required><br>
+
+        <input type="submit" value="Update" class= "button">
+    </form>
+</body>
+</html>
+
+
+

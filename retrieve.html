@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve User Details</title>
+    <style>
+         
+ body {
+    text-align: center;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+}
+
+form {
+    background-color: aquamarine;
+    display: block;
+    margin: 100px auto; 
+    width: 200px;
+    padding: 50px; 
+    margin-top: 200px;
+    border-radius: 25px;
+}
+
+#email,
+#password {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#email:hover,
+#password:hover {
+    background-color: aliceblue;
+    border:none;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius:5px;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border:none;
+}
+
+label {
+    color: black;
+}
+    </style>
+
+</head>
+<body>
+    <form action="retrieve.php" method="post">
+        <label for="email">Email:</label>
+        <input id = "email" type = "email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input id = "password" type="password" name="password" required ><br>
+
+        <input type="submit" value="Retrieve" class = "button">
+    </form>
+</body>
+</html>

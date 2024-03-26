@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+    text-align: center;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: inline-block;
+    background-color: aquamarine;
+    width: 300px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    padding-top:50px;
+    padding-bottom:50px;
+justify-content: center;
+}
+label{
+    display:inline-flex;
+}
+
+#pname,
+#email,
+#password,
+#phone {
+    display: inline-flex;
+    margin: 10px 0; 
+    border-radius: 5px;;
+}
+
+#pname:hover,
+#email:hover,
+#password:hover,
+#phone:hover {
+    background-color: aliceblue;
+    border:none;
+}
+.button{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius:5px;
+}
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border:none;
+}
+    </style>
+    
+</head>
+<body>
+    <form action="insert.php" method="post">
+        <label for="pname">Name:</label>
+        <input id = "pname" type="text" name="pname" required ><br>
+        
+        <label for="email">Email:</label>
+        <input id = "email" type="email" name="email" required ><br>
+
+        <label for="password">Password:</label>
+        <input id = "password" type="password" name="password" required ><br>
+
+        <label for="phone">Phone:</label>
+        <input id = "phone" type="text" name="phone" required ><br>
+
+        <input type="submit" value="Register" class ="button">
+    </form>
+</body>
+</html>
+
